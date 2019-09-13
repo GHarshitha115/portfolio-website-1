@@ -2,7 +2,7 @@
 
     <head>
         <title>
-            My Bootstrap-grid
+            My Bootstrap-grid.html
         </title>
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -14,29 +14,26 @@
         <script src="bootstrap/bootstrap.min.js"></script>
         <style>
             .col-height {
-                height: 100px;
-                background-color: skyblue;
+                height: 50px;
+                background-color: green;
                 margin-top: 10px;
                 margin-bottom: 10px;
-                border: 4px solid green;
-                border-style: dotted;
+
+                text-align: center;
+
             }
 
-            .col-#4a86e8 {
-                background-color: -\#4a86e8;
+            .col- green {
+                background-color: green;
             }
 
             .col-orange {
                 background-color: orange;
             }
 
-            .border-box {
-                height: 100px;
-                width: 100px;
-                padding: 5px;
-                background-color: red;
-                border: 3px dashed blue;
-                box-sizing: border-box;
+            body {
+                margin: 5px;
+                border: 2px solid black;
             }
         </style>
     </head>
@@ -44,14 +41,14 @@
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-9 col-height col-orange"> </div>
-                <div class="col-3 col-height col-#4a86e8"> </div>
-                <div class="col-4 col-height col-orange col-border"> </div>
-                <div class="col-3 col-height col-#4a86e8 col-border"> </div>
-                <div class="col-5 col-height col-orange"> </div>
-                <div class="col-3 col-height col-#4a86e8"> </div>
-                <div class="col-6 col-height col-orange"> </div>
-                <div class="col-3 col-height col-#4a86e8"> </div>
+                <div class="col-9 col-height col-orange"> 9</div>
+                <div class="col-3 col-height col-green">3 </div>
+                <div class="col-4 col-height col-orange "> 4 </div>
+                <div class="col-3 col-height col-green "> 3</div>
+                <div class="col-5 col-height col-orange">5 </div>
+                <div class="col-3 col-height col-green"> 3</div>
+                <div class="col-6 col-height col-orange"> 6</div>
+                <div class="col-3 col-height col-green"> 3</div>
             </div>
         </div>
     </body>
