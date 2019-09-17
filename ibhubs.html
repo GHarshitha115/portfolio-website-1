@@ -6,39 +6,70 @@
             My Portfolio
         </title>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
         <script src="bootstrap/jquery.min.js"></script>
         <script src="bootstrap/popper.min.js"></script>
         <script src="bootstrap/bootstrap.min.js"></script>
         <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: skyblue;
+            }
+
+            li {
+                float: right;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                background-color: cyan;
+            }
+
             img {
                 object-fit: contain;
                 width: 100%;
+            }
 
+            body {
+                background-image: url("static/ibhubs_logo.png");
+                background-repeat: no-repeat;
+                background-size: contain;
             }
         </style>
     </head>
 
+
     <body>
+        <ul>
+            <li><a class="active" href="#About">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#News">News</a></li>
+            <li><a href="#Home">Home</a></li>
+        </ul>
+
         <div class="container">
             <div class="row">
                 <div class="col-6 ">
                     <br>
-                    <h1 align="left">iBhubs</h1>
-                    <p>PAN INDIA STARTUP HUB!</p><br>
+                    <h1 style="color:green">iBHubs</h1>
+                    <p style="color:blue">PAN INDIA STARTUP HUB!</p><br>
                     <br>
                     <p> 500 hubs with 4 spokes each,establishing a total<br> of 2500 centers across india by the end of 2019</p>
                     <br>
                     <p>with,this world class innvocations and the best <br>practice can reach people across the nation <br>rapidly</p>
                 </div>
-
                 <br>
-                <img class="col-6 logo" src="https://tap.ibhubs.in/assets/static/ibhubs_logo.png" alt="iBhubs logo">
-
-                <br>
-
             </div>
         </div>
     </body>
