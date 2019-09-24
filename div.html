@@ -11,35 +11,96 @@
         <script src="bootstrap/popper.min.js"></script>
         <script src="bootstrap/bootstrap.min.js"></script>
         <style>
+            * {
+                border: 2px solid cyan;
+
+            }
+
             ul {
                 list-style-type: none;
+                padding-left: 0;
+                margin-bottom: 0px;
             }
 
             li {
                 overflow: auto;
+                text-align: center;
+                background-color: red;
+            }
+
+            img {
+
+                border: 1px solid black;
+                padding: 20px;
+                object-fit: contain;
+                background-color: yellow;
+                /* margin-bottom: 10px;*/
+            }
+
+            h2 {
+                background-color: yellow;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .d {
+                background-color: green;
+                padding: 50px;
+            }
+
+            .c {
+                background-color: pink;
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            body {
+                background-color: purple;
+            }
+
+            p {
+                background-color: skyblue;
+            }
+
+            r {
+                background-color: orange;
+            }
+
+            .skill {
+                font-size: 40px;
+                background-color: orange;
+                object-fit: contain;
             }
         </style>
     </head>
 
     <body>
         <br>
-        <div class="container">
-            <ul class="row">
+        <div class="container d">
+            <ul class="row c">
                 <br>
-                <li class="col-4 ">
+                <li class="col-4 r">
+                    <br>
                     <img src="static/Skills/C-Language-Icon/css@2x.png" alt="C Icon">
-                    <h2>C</h1>
-                        <p>C is a Programming Language </p>
+                    <br>
+                    <br>
+                    <p class="Skill">C</p>
+                    <p>C is a Programming Language </p>
+
                 </li>
-                <li class="col-4 ">
+                <li class="col-4 r">
+                    <br>
                     <img src="static/Skills/HTML-Icon/html(1)@2x.png" alt="HTML Icon">
-                    <h2>HTML</h1>
-                        <p> Hyper Text Markup Language <br>(HTML) is a markup language for creating a webpage</p>
+                    <br><br>
+                    <p class="Skill">HTML</p>
+                    <p> Hyper Text Markup Language <br>(HTML) is a markup language for creating a webpage</p>
                 </li>
-                <li class="col-4 ">
+                <li class="col-4 r">
+                    <br>
                     <img src="static/Skills/CSS-Icon/css(1)@2x.png" alt="CSS Icon">
-                    <h2>CSS</h1>
-                        <p>CSS stands for Cascading Style Sheets. Its purpose is to style HTML document</p>
+                    <br><br>
+                    <p class="Skill">CSS</p>
+                    <p>CSS stands for Cascading Style Sheets. Its purpose is to style HTML document</p>
                 </li>
             </ul>
         </div>
