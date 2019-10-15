@@ -14,13 +14,12 @@
         <script src="bootstrap/bootstrap.min.js"></script>
         <style>
             body {
-                margin-top: 20px;
+                margin-top: 40px;
             }
 
             .orange {
                 padding: 50px;
                 background-color: orange;
-
             }
 
             .green {
@@ -41,14 +40,29 @@
     </head>
 
     <body>
-        <h1>Assignment 10</h1>
+        <br>
         <div class="container">
-            <p>Extra Small & Small Devices</p>
-            <div class="row">
-                <div class="col-6  col-md-3 order-md-3 col-xl-3 order-xl-4 orange"></div>
-                <div class="col-6 col-md-3 order-md-2 col-xl-3 order-xl-3 green"></div>
-                <div class="col-6 col-md-3 order-md-4 col-xl-3 order-xl-1 violet"></div>
-                <div class="col-6  col-md-3 order-md-1 col-xl-3 order-xl-2 blue"></div>
+            <div class="row d-md-none">
+                <div class="col-6 orange"></div>
+                <div class="col-6 green"></div>
+            </div>
+            <div class="row d-md-none">
+                <div class="col-6 violet"></div>
+                <div class="col-6 blue"></div>
+            </div> <br> <br>
+            <div class="row d-md-none">
+                <div class="col-3 blue"></div>
+                <div class="col-3 green"></div>
+                <div class="col-3 orange"></div>
+            </div>
+            <div class="row d-md-none">
+                <div class="col-3 violet"></div>
+            </div><br><br>
+            <div class="row d-xl-flex ">
+                <div class="col-3 violet"></div>
+                <div class="col-3 blue"></div>
+                <div class="col-3 green"></div>
+                <div class="col-3 orange"></div>
             </div>
         </div>
     </body>
