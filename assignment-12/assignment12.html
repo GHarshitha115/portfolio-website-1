@@ -13,9 +13,6 @@
         object-fit: contain;
       }
 
-      div {
-        padding: 20px;
-      }
 
       img {
         text-align: left;
@@ -58,6 +55,11 @@
         margin-left: 40px;
       }
 
+      .image-1 {
+        width: 400px;
+        height: 400px;
+      }
+
       .image-2 {
         width: 400px;
         height: 400px;
@@ -67,11 +69,26 @@
         text-align: center;
       }
 
+      .space {
+        text-align: right;
+      }
+
       .image-3 {
         text-align: center;
         width: 175px;
         height: 175px;
         margin-top: -20 px;
+        object-fit: contain
+      }
+
+      .image-x {
+        width: 900px;
+        height: 500px;
+      }
+
+      .image-x1 {
+        width: 400px;
+        height: 500px;
       }
 
       .image-4 {
@@ -113,8 +130,8 @@
   <body>
     <div class="container ">
       <div class="row A ">
-        <div class="col-10 order-1 col-md-8 order-md-1 x"><img src="assets/logo.png" alt="Gmail Icon">Gmail</div>
-        <div class="col-2 order-2 col-md-2 order-md-3 T"><button type="button" class="btn btn-primary">Create an account</button></div>
+        <div class="col-9 order-1 col-md-8 order-md-1 x"><img src="assets/logo.png" alt="Gmail Icon">Gmail</div>
+        <div class="col-3 order-2 col-md-2 order-md-3 T"><button type="button" class="btn btn-primary">Create an account</button></div>
         <div class="col-10 order-3 col-md-1 order-md-2 T"><button type="button" class="btn btn-mintcream">Forwork</button></div>
         <div class="col-2 order-4 col-md-1 order-md-2 T"><button type="button" class="btn btn-mintcream">Sign in</button></div>
         <!-- <div class="col-sm-6  order-1 col-md-2 order-1 x"><img src="assets/logo.png" alt="Gmail Icon">Gmail</div>
@@ -125,31 +142,41 @@
         <div class="col-sm-3 order-2 col-md-1 order-2 T"> <button type="button" class="btn btn-mintcream">Sign in</button></div>
       </div>-->
       </div>
-    </div>
-    <div class="container ">
+
       <br>
-      <div class="row ">
+      <div class="row  ">
         <div class="col-sm-12 col-md-6 ">
           <h1>Get more done with Gmail</h1>
           <p>Now more secure, smarters and easier to use--helping you save time and do more with your inbox </p>
-          <button type="button" class="btn btn-primary z">Create an account</button>
+          <button type="button" class="btn btn-primary d-sm-none d-md-flex z">Create an account</button>
         </div>
-        <div class="col-sm-12 col-md-6"><img class="image-2" src="assets/desktop.png" alt="desktop Icon"></div>
+        <div class="d-none col-md-6 d-md-block"><img class="image-2" src="assets/desktop.png" alt="desktop Icon"></div>
+
+        <div class="row d-md-none">
+          <div clas="col-sm-12 "><img class="image-1" src="assets/landing-page-image-mobile.png" alt="landing-page Icon">
+          </div>
+          <div class="col-12">
+            <button type="button" class="btn btn-primary d-sm-none d-md-flex z">Get Gmail</button></div>
+
+        </div>
       </div>
-    </div>
-    <div class="container B1">
-      <div class="row">
+
+      <div class="row B1">
         <div class="col-12">
           <h3>Experience Gmail on any devices</h3>
           <p>The ease & simplicity of Gmail, wherever you are</p>
         </div>
-        <div class="col-sm-3"></div>
-        <div class="col-sm-12 col-md-3"><img class="image-3" src="assets/google-playstore.png" alt="google-playstore Icon"> </div>
-        <div class="col-sm-12 col-md-3"><img class="image-3" src="assets/app-store.png" alt="appstore Icon"> </div>
-        <img class="image-4" src="assets/experience-image-mobile.png" alt="appstore Icon">
-
+        <div class=" col-sm-12 col-md-6 space"><img class="image-3" src="assets/google-playstore.png" alt="google-playstore Icon"> </div>
+        <div class=" col-sm-12 col-md-3"><img class="image-3" src="assets/app-store.png" alt="appstore Icon"> </div>
+        <div class="col-md-12 d-none d-md-block">
+          <img class="image-x" src="assets/experience-image-mobile.png" alt="appstore Icon">
+        </div>
+        <div class="col-sm-12 d-md-none">
+          <img class="image-x1" src="assets/experience-image-mobile.png" alt="appstore Icon">
+        </div>
       </div>
     </div>
+
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6 ">
