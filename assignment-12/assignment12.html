@@ -9,6 +9,14 @@
     <script src="../bootstrap/popper.min.js"></script>
     <script src="../bootstrap/bootstrap.min.js"></script>
     <style>
+      .container {
+        object-fit: contain;
+      }
+
+      div {
+        padding: 10px;
+      }
+
       * {
         object-fit: contain;
       }
@@ -109,7 +117,7 @@
 
 
       .image-5 {
-        width: 430px;
+        width: 390px;
         height: 200px;
       }
 
@@ -130,9 +138,9 @@
   <body>
     <div class="container ">
       <div class="row A ">
-        <div class="col-9 order-1 col-md-8 order-md-1 x"><img src="assets/logo.png" alt="Gmail Icon">Gmail</div>
+        <div class="col-6 order-1 col-md-8 order-md-1 x"><img src="assets/logo.png" alt="Gmail Icon">Gmail</div>
         <div class="col-3 order-2 col-md-2 order-md-3 T"><button type="button" class="btn btn-primary">Create an account</button></div>
-        <div class="col-10 order-3 col-md-1 order-md-2 T"><button type="button" class="btn btn-mintcream">Forwork</button></div>
+        <div class="col-7 order-3 col-md-1 order-md-2 T"><button type="button" class="btn btn-mintcream">Forwork</button></div>
         <div class="col-2 order-4 col-md-1 order-md-2 T"><button type="button" class="btn btn-mintcream">Sign in</button></div>
         <!-- <div class="col-sm-6  order-1 col-md-2 order-1 x"><img src="assets/logo.png" alt="Gmail Icon">Gmail</div>
         <div class="col-md-6 order-1 T"></div>
@@ -145,17 +153,21 @@
 
       <br>
       <div class="row  ">
-        <div class="col-sm-12 col-md-6 ">
-          <h1>Get more done with Gmail</h1>
+        <div class="d-none col-md-6 d-md-block">
+          <h1>Get more done <br>with Gmail</h1>
           <p>Now more secure, smarters and easier to use--helping you save time and do more with your inbox </p>
           <button type="button" class="btn btn-primary d-sm-none d-md-flex z">Create an account</button>
         </div>
         <div class="d-none col-md-6 d-md-block"><img class="image-2" src="assets/desktop.png" alt="desktop Icon"></div>
 
         <div class="row d-md-none">
+          <div class="col-sm-12 col-md-6 B1 ">
+            <h1>Get more done with <br>Gmail</h1>
+            <p>Now more secure, smarters and easier to use--helping you save time and do more with your inbox </p>
+          </div>
           <div clas="col-sm-12 "><img class="image-1" src="assets/landing-page-image-mobile.png" alt="landing-page Icon">
           </div>
-          <div class="col-12">
+          <div class="col-12 B1">
             <button type="button" class="btn btn-primary d-sm-none d-md-flex z">Get Gmail</button></div>
 
         </div>
@@ -166,8 +178,8 @@
           <h3>Experience Gmail on any devices</h3>
           <p>The ease & simplicity of Gmail, wherever you are</p>
         </div>
-        <div class=" col-sm-12 col-md-6 space"><img class="image-3" src="assets/google-playstore.png" alt="google-playstore Icon"> </div>
-        <div class=" col-sm-12 col-md-3"><img class="image-3" src="assets/app-store.png" alt="appstore Icon"> </div>
+        <div class=" col-sm-6 col-md-6 space"><img class="image-3" src="assets/google-playstore.png" alt="google-playstore Icon"> </div>
+        <div class=" col-sm-3 col-md-3"><img class="image-3" src="assets/app-store.png" alt="appstore Icon"> </div>
         <div class="col-md-12 d-none d-md-block">
           <img class="image-x" src="assets/experience-image-mobile.png" alt="appstore Icon">
         </div>
@@ -179,14 +191,20 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-6 ">
+        <div class=" d-none col-md-6 d-md-flex">
           <div class="card">
             <h1>Stay Organised instantly</h1>
             <p>See what's new at a glance and decide what do you want to read and response to u</p>
             <img class="image-5" src="assets/stay1.png" alt="desktop Icon">
           </div>
+          <div class="col-sm-12 d-md-none B1">
+            <h1>Stay Organised instantly</h1>
+            <p>See what's new at a glance and decide what do you want to read and response to u</p>
+            <img class="image-1" src="assets/stay2.png" alt="desktop Icon">
+
+          </div>
         </div>
-        <div class="col-sm-12 col-md-6 ">
+        <div class="col-md-6 ">
           <div class="card">
             <h1>Never drop the ball</h1>
             <p>Get nudges that remaind you to follow up and respond to message, so that nothing slips through the crack.</p>
@@ -194,31 +212,48 @@
             <br>
             <img class="image-5" src="assets/never1.png" alt="desktop Icon"></div>
         </div>
+        <div class="col-sm-12 d-md-none B1">
+          <h1>Never drop the ball</h1>
+          <p>Get nudges that remaind you to follow up and respond to message, so that nothing slips through the crack.</p>
+          <br>
+          <br>
+          <img class="image-1" src="assets/never2.png" alt="desktop Icon"></div>
+
       </div>
+    </div>
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-6">
+        <div class="d-none col-md-6 d-md-block">
           <h1>Take action right from the inbox</h1>
           <p>View attachments, RSVP to events, snooze messages and more without opening any emails</p>
         </div>
         <br>
-        <div class="col-sm-12 col-md-6">
+        <div class="d-none col-md-6 d-md-block">
           <img class="image-5" src="assets/take-action-desktop.png" alt="desktop Icon"></div>
+        <div class="col-sm-12 d-md-none B1">
+          <h1>Take action right from the inbox</h1>
+          <p>View attachments, RSVP to events, snooze messages and more without opening any emails</p>
+          <img class="image-1" src="assets/take-action-mobile.png" alt="desktop Icon"></div>
       </div>
     </div>
     <div class="container  ">
       <div class="row">
 
-        <div class="col-sm-12 col-md-6 B2">
+        <div class="d-none col-md-6 d-md-block B2">
           <br>
           <img class="image-5" src="assets/avoid-suspicious-emails-desktop.png" alt="desktop Icon"></div>
 
-        <div class="col-sm-12 col-md-6 B2">
+        <div class="d-none col-md-6 d-md-block B2">
           <br>
           <h1>Avoid Suspicious Emails</h1>
           <p>Gmail Blocks 99.9% of dangerous emails before they reach you. if we think something seems phishy-y, you will get a warning</p>
 
+        </div>
+        <div class="col-sm-12 d-md-none">
+          <h1>Avoid suspicious emails</h1>
+          <p>Gmail Blocks 99.9% of dangerous emails before they reach you. if we think something seems phishy-y, you will get a warning</p>
+          <img class="image-5" src="assets/avoid-suspicious-emails-mobile.png" alt="desktop Icon">
         </div>
       </div>
     </div>
@@ -227,8 +262,8 @@
     <div class="col-12">
       <br>
       <img class="image-6" src="assets/logo.png" alt="Gmail Icon">
-      <div class="col-12 B10">
-        <h2>Get started with Gmail</h2>
+      <div class="col-12 B1">
+        <h1>Get started with Gmail</h1>
         <br>
         <button type="button" class="btn btn-primary">Create account</button>
       </div>
