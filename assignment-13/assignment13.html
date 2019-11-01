@@ -70,7 +70,11 @@
         list-style-type: none;
       }
 
-
+      .ll {
+        display: inline-block;
+        margin-left: -40px;
+        margin-right: 90px;
+      }
 
 
 
@@ -137,7 +141,25 @@
       }
 
       .color {
-        background-color: snow;
+        background-color: white;
+      }
+
+
+
+      li {
+        display: block;
+        float: left;
+        border-radius: 8px solid ghostwhite;
+        margin-right: 4px;
+        margin-bottom: 2px;
+        padding: 5px;
+        font-size: 10px;
+        background-color: ghostwhite;
+      }
+
+
+      .move {
+        margin-top: -4px;
       }
     </style>
   </head>
@@ -149,19 +171,13 @@
           <img class="image1" src="assets/github-logo.svg" alt="logo">
         </div>
 
-        <div class="col-4 align auto d-md-none"><button type="button" class="btn btn-outline-light">Sign Up</button></div>
-        <div class="col-2  d-md-none">
+        <div class="col-4 col-md-5 align auto"><button type="button" class="btn btn-outline-light">Sign Up</button></div>
+        <div class="col-2 col-md-1">
           <div class="menu"></div>
           <div class="menu"></div>
           <div class="menu"></div>
         </div>
-        <div class="col-5 align auto d-none d-md-block"><button type="button" class="btn btn-outline-light">Sign Up</button></div>
 
-        <div class="col-1 d-none d-md-block">
-          <div class="menu"></div>
-          <div class="menu"></div>
-          <div class="menu"></div>
-        </div>
       </div>
       <div class="row row2x d-md-none border1">
         <div class="col-12 ">Explore</div>
@@ -170,14 +186,14 @@
         <ul>Collection</ul>
         <ul>Events</ul>
       </div>
-      <div class="row d-none d-md-flex left border1 ">
-        <ul>Explore</ul>
-        <ul class="B">Topics</ul>
-        <ul>Trending</ul>
-        <ul>Collection</ul>
-        <ul>Events</ul>
-      </div>
-      <div class="row border1 padd align1">
+      <ul class="row d-none d-md-flex left border1 ">
+        <ul class="ll">Explore</ul>
+        <ul class="B ll">Topics</ul>
+        <ul class="ll">Trending</ul>
+        <ul class="ll">Collection</ul>
+        <ul class="ll">Events</ul>
+      </ul>
+      <div class="row border1 padd align1 ">
         <div class="col-12 ">
           <h1>Topics</h1>
           <p>Browse popular topics on GitHub.</p>
@@ -185,398 +201,424 @@
       </div>
       <br>
 
-      <div class="row align1-center d-md-none  ">
-        <div class="col-12 align1-center">
-          <div class="card">
-            <img class="image2" src="assets/opengl.png" alt="opengl">
+      <div class="row align1-center d-md-none ">
+        <div class="col-12 align1-center ">
+          <div class="card ">
+            <img class="image2 " src="assets/opengl.png " alt="opengl ">
             <h5>OpenGl</h5>
-            <p class="row2x">OpenGl is a software interface that allowa a programmer to communicate with graphics hardware.</p>
+            <p class="row2x ">OpenGl is a software interface that allowa a programmer to communicate with graphics hardware.</p>
 
           </div>
         </div>
       </div>
-      <div class="row  align1-center d-md-none">
-        <div class="col-12 555t-center">
-          <div class="card">
-            <img class="image2 " src="assets/flask.png" alt="opengl">
+      <div class="row align1-center d-md-none ">
+        <div class="col-12 555t-center ">
+          <div class="card ">
+            <img class="image2 " src="assets/flask.png " alt="opengl ">
             <h5>Flask</h5>
-            <p class="row2x">
+            <p class="row2x ">
               Flask is a web framework for Python based on the Werkzeug toolkit</p>
           </div>
         </div>
       </div>
-      <div class="row  align1-center d-md-none  ">
-        <div class="col-12 align1-center">
-          <div class="card">
-            <img class="image2 " src="assets/gradle.png" alt="opengl">
+      <div class="row align1-center d-md-none ">
+        <div class="col-12 align1-center ">
+          <div class="card ">
+            <img class="image2 " src="assets/gradle.png " alt="opengl ">
             <h5>Gradle</h5>
-            <p class="row2x">Gradle is an open-source build tool that helps teams build,automate and deliver better software,faster.</p>
+            <p class="row2x ">Gradle is an open-source build tool that helps teams build,automate and deliver better software,faster.</p>
           </div>
         </div>
       </div>
-      <div class="row align1 d-none d-md-flex">
+      <div class="row align1 d-none d-md-flex ">
         <div class="col-4 ">
-          <div class="card k1">
-            <img class="image3" src="assets/opengl.png" alt="opengl">
+          <div class="card k1 ">
+            <img class="image3 " src="assets/opengl.png " alt="opengl ">
             <h5>OpenGl</h5>
-            <p class="row2x"> OpenGl is a software <br>interface that allowa a<br> programmer to<br>communicate with <br>graphics hardware.</p>
+            <p class="row2x "> OpenGl is a software <br>interface that allowa a<br> programmer to<br>communicate with <br>graphics hardware.</p>
           </div>
         </div>
 
-        <div class="col-4 align1">
-          <div class="card k">
-            <img class="image3 " src="assets/flask.png" alt="opengl">
+        <div class="col-4 align1 ">
+          <div class="card k ">
+            <img class="image3 " src="assets/flask.png " alt="opengl ">
             <h5>Flask</h5>
-            <p class="row2x">Flask is a web <br>framework for Python<br> based on the <br>Werkzeug toolkit </p>
+            <p class="row2x ">Flask is a web <br>framework for Python<br> based on the <br>Werkzeug toolkit </p>
           </div>
         </div>
 
-        <div class="col-4 align1">
-          <div class="card">
-            <img class="image3 " src="assets/gradle.png" alt="opengl">
+        <div class="col-4 align1 ">
+          <div class="card ">
+            <img class="image3 " src="assets/gradle.png " alt="opengl ">
             <h5>Gradle</h5>
-            <p class="row2x">Gradle is an open-<br>source build tool that <br>helps teams build,<br>automate and deliver<br> better software,<br>faster.</p>
+            <p class="row2x ">Gradle is an open-<br>source build tool that <br>helps teams build,<br>automate and deliver<br> better software,<br>faster.</p>
           </div>
         </div>
       </div>
       <br>
-      <div class="row">
-        <div class="col-12">
+      <div class="row ">
+        <div class="col-12 ">
           <h3>All featured topics</h3>
         </div>
       </div>
       <br>
-      <div class="row border1 d-md-none">
-        <div class="col-1 box">#</div>
-        <div class="col-10">
+      <div class="row border1 d-md-none ">
+        <div class="col-1 box ">#</div>
+        <div class="col-10 ">
           <h5>3D</h5>
           <p>3D modeling is the process of virtually developing the<br> surface and structure of a 3D object.</p>
-          <button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
-        </div>
-      </div>
-      <div class="row border1 d-none d-md-flex">
-        <div class="col-1 box">#</div>
-        <div class="col-9">
-          <h6>3D</h6>
-          <p>3D modeling is the process of virtually developing the surface and structure of a 3D object.</p>
-        </div>
-        <div class="col-2"><button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
-        </div>
-      </div>
-
-      <div class="row border1 d-md-none">
-        <div class="col-1 box">#</div>
-        <div class="col-10">
-          <h5>Ajax</h5>
-          <p>Ajax is a technique for creating interactive web applications.</p>
-          <button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
-        </div>
-      </div>
-
-      <div class="row border1 d-none d-md-flex">
-        <div class="col-1 box">#</div>
-        <div class="col-9">
-          <h5>Ajax</h5>
-          <p>Ajax is a technique for creating interactive web applications.</p>
-        </div>
-        <div class="col-2"><button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
-
-        </div>
-      </div>
-      <div class="row border1 d-md-none">
-        <div class="col-1 box">#</div>
-        <div class="col-10">
-          <h5>Algorithm</h5>
-          <p>Alogrithm are self-contained sequences that carry out a variety of tasks.</p>
-          <button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
-        </div>
-      </div>
-      <div class="row border1 d-md-none ">
-        <div class="col-2">
-          <img class="image5 " src="assets/amphp.png" alt="opengl">
-        </div>
-        <div class="col-9">
-          <h5>Amp</h5>
-          <p>Amp is a non-blocking concurrency framework for PHP.</p>
-          <button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
-        </div>
-      </div>
-      <div class="row border1 d-none d-md-flex">
-        <div class="col-1">
-          <img class="image5 " src="assets/amphp.png" alt="opengl">
-        </div>
-        <div class="col-9">
-          <h5>Amp</h5>
-          <p>Amp is a non-blocking concurrency framework for PHP.</p>
-        </div>
-        <div class="col-2"><button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
-        </div>
-      </div>
-      <div class="row border1 d-md-none ">
-        <div class="col-2">
-          <img class="image5 " src="assets/android.png" alt="opengl">
-        </div>
-        <div class="col-9">
-          <h5>Android</h5>
-          <p>Android is an operating system built by Google designed for mobile devices.</p>
-          <button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
+          <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
         </div>
       </div>
       <div class="row border1 d-none d-md-flex ">
-        <div class="col-1">
-          <img class="image5 " src="assets/android.png" alt="opengl">
+        <div class="col-1 box ">#</div>
+        <div class="col-9 ">
+          <h6>3D</h6>
+          <p>3D modeling is the process of virtually developing the surface and structure of a 3D object.</p>
         </div>
-        <div class="col-9">
+        <div class="col-2 "><button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
+        </div>
+      </div>
+
+      <div class="row border1 d-md-none ">
+        <div class="col-1 box ">#</div>
+        <div class="col-10 ">
+          <h5>Ajax</h5>
+          <p>Ajax is a technique for creating interactive web applications.</p>
+          <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
+        </div>
+      </div>
+
+      <div class="row border1 d-none d-md-flex ">
+        <div class="col-1 box ">#</div>
+        <div class="col-9 ">
+          <h5>Ajax</h5>
+          <p>Ajax is a technique for creating interactive web applications.</p>
+        </div>
+        <div class="col-2 "><button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
+
+        </div>
+      </div>
+      <div class="row border1 d-md-none ">
+        <div class="col-1 box ">#</div>
+        <div class="col-10 ">
+          <h5>Algorithm</h5>
+          <p>Alogrithm are self-contained sequences that carry out a variety of tasks.</p>
+          <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
+        </div>
+      </div>
+      <div class="row border1 d-md-none ">
+        <div class="col-2 ">
+          <img class="image5 " src="assets/amphp.png " alt="opengl ">
+        </div>
+        <div class="col-9 ">
+          <h5>Amp</h5>
+          <p>Amp is a non-blocking concurrency framework for PHP.</p>
+          <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
+        </div>
+      </div>
+      <div class="row border1 d-none d-md-flex ">
+        <div class="col-1 ">
+          <img class="image5 " src="assets/amphp.png " alt="opengl ">
+        </div>
+        <div class="col-9 ">
+          <h5>Amp</h5>
+          <p>Amp is a non-blocking concurrency framework for PHP.</p>
+        </div>
+        <div class="col-2 "><button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
+        </div>
+      </div>
+      <div class="row border1 d-md-none ">
+        <div class="col-2 ">
+          <img class="image5 " src="assets/android.png " alt="opengl ">
+        </div>
+        <div class="col-9 ">
+          <h5>Android</h5>
+          <p>Android is an operating system built by Google designed for mobile devices.</p>
+          <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
+        </div>
+      </div>
+      <div class="row border1 d-none d-md-flex ">
+        <div class="col-1 ">
+          <img class="image5 " src="assets/android.png " alt="opengl ">
+        </div>
+        <div class="col-9 ">
           <h5>Android</h5>
           <p>Android is an operating system built by Google designed for mobile devices.</p>
         </div>
         <div class="col-2 ">
-          <button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
+          <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
         </div>
       </div>
       <div class="row border1 d-md-none ">
-        <div class="col-2">
-          <img class="image5 " src="assets/angular.png" alt="opengl">
+        <div class="col-2 ">
+          <img class="image5 " src="assets/angular.png " alt="opengl ">
         </div>
-        <div class="col-9">
+        <div class="col-9 ">
           <h5>Angular</h5>
           <p>Angular is an open source web application platform.</p>
-          <button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
+          <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
         </div>
       </div>
       <div class="row border1 d-none d-md-flex ">
-        <div class="col-1">
-          <img class="image5 " src="assets/angular.png" alt="opengl">
+        <div class="col-1 ">
+          <img class="image5 " src="assets/angular.png " alt="opengl ">
         </div>
-        <div class="col-9">
+        <div class="col-9 ">
           <h5>Angular</h5>
           <p>Angular is an open source web application platform.</p>
         </div>
-        <div class="col-2">
-          <button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
+        <div class="col-2 ">
+          <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
         </div>
       </div>
       <div class="row border1 d-md-none ">
-        <div class="col-2">
-          <img class="image5 " src="assets/ansible.png" alt="opengl">
+        <div class="col-2 ">
+          <img class="image5 " src="assets/ansible.png " alt="opengl ">
         </div>
-        <div class="col-9">
+        <div class="col-9 ">
           <h5>Ansible</h5>
           <p>Ansible is a simple and powerful automation engine.</p>
-          <button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
-        </div>
-      </div>
-      <div class="row border1 d-none d-md-flex">
-        <div class="col-1">
-          <img class="image5 " src="assets/ansible.png" alt="opengl">
-        </div>
-        <div class="col-9">
-          <h5>Ansible</h5>
-          <p>Ansible is a simple and powerful automation engine.</p>
-        </div>
-        <div class="col-2">
-          <button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
-        </div>
-      </div>
-      <div class="row border1 d-md-none ">
-        <div class="col-2 box">#</div>
-        <div class="col-9">
-          <h5>API</h5>
-          <p>An API (Application Programming interface) is a collection of protocols and subroutines for building software.</p>
-          <button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
+          <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
         </div>
       </div>
       <div class="row border1 d-none d-md-flex ">
-        <div class="col-1 box">#</div>
-        <div class="col-9">
+        <div class="col-1 ">
+          <img class="image5 " src="assets/ansible.png " alt="opengl ">
+        </div>
+        <div class="col-9 ">
+          <h5>Ansible</h5>
+          <p>Ansible is a simple and powerful automation engine.</p>
+        </div>
+        <div class="col-2 ">
+          <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
+        </div>
+      </div>
+      <div class="row border1 d-md-none ">
+        <div class="col-2 box ">#</div>
+        <div class="col-9 ">
+          <h5>API</h5>
+          <p>An API (Application Programming interface) is a collection of protocols and subroutines for building software.</p>
+          <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
+        </div>
+      </div>
+      <div class="row border1 d-none d-md-flex ">
+        <div class="col-1 box ">#</div>
+        <div class="col-9 ">
           <h5>API</h5>
           <p>An API (Application Programming interface) is a collection of protocols and subroutines for building software.</p>
         </div>
-        <div class="col-2">
+        <div class="col-2 ">
 
-          <button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
+          <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
         </div>
       </div>
 
       <div class="row border1 d-md-none ">
-        <div class="col-2">
-          <img class="image5 " src="assets/arduino.png" alt="opengl">
+        <div class="col-2 ">
+          <img class="image5 " src="assets/arduino.png " alt="opengl ">
         </div>
-        <div class="col-9">
+        <div class="col-9 ">
           <h5>Arduino</h5>
           <p>Arduino is an open source hardware and software company and maker community.</p>
-          <button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
+          <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
         </div>
       </div>
-      <div class="row border1 d-none d-md-flex">
-        <div class="col-1">
-          <img class="image5 " src="assets/arduino.png" alt="opengl">
+      <div class="row border1 d-none d-md-flex ">
+        <div class="col-1 ">
+          <img class="image5 " src="assets/arduino.png " alt="opengl ">
         </div>
-        <div class="col-9">
+        <div class="col-9 ">
           <h5>Arduino</h5>
           <p>Arduino is an open source hardware and software company and maker community.</p>
         </div>
-        <div class="col-2">
-          <button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
+        <div class="col-2 ">
+          <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
         </div>
       </div>
       <div class="row border1 d-md-none ">
-        <div class="col-2">
-          <img class="image5 " src="assets/aspnet.png" alt="opengl">
+        <div class="col-2 ">
+          <img class="image5 " src="assets/aspnet.png " alt="opengl ">
         </div>
-        <div class="col-9">
+        <div class="col-9 ">
           <h5>ASP.Net</h5>
           <p>ASP.NET is aweb framework for building modern web apps and services.</p>
-          <button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
+          <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
         </div>
       </div>
-      <div class="row border1 d-none d-md-flex">
-        <div class="col-1">
-          <img class="image5 " src="assets/aspnet.png" alt="opengl">
+      <div class="row border1 d-none d-md-flex ">
+        <div class="col-1 ">
+          <img class="image5 " src="assets/aspnet.png " alt="opengl ">
         </div>
-        <div class="col-9">
+        <div class="col-9 ">
           <h5>ASP.Net</h5>
           <p>ASP.NET is aweb framework for building modern web apps and services.</p>
         </div>
-        <div class="col-2">
-          <button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
+        <div class="col-2 ">
+          <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
         </div>
       </div>
       <div class="row border1 d-md-none ">
-        <div class="col-2">
-          <img class="image5 " src="assets/atom.png" alt="opengl">
+        <div class="col-2 ">
+          <img class="image5 " src="assets/atom.png " alt="opengl ">
         </div>
-        <div class="col-9">
+        <div class="col-9 ">
           <h5>Atmo</h5>
           <p>Atom is a open source text editior built with web<br>technologies.</p>
-          <button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
+          <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
         </div>
       </div>
-      <div class="row border1 d-none d-md-flex">
-        <div class="col-1">
-          <img class="image5 " src="assets/atom.png" alt="opengl">
+      <div class="row border1 d-none d-md-flex ">
+        <div class="col-1 ">
+          <img class="image5 " src="assets/atom.png " alt="opengl ">
         </div>
-        <div class="col-9">
+        <div class="col-9 ">
           <h5>Atmo</h5>
           <p>Atom is a open source text editior built with web technologies.</p>
         </div>
-        <div class="col-2">
-          <button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
+        <div class="col-2 ">
+          <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
         </div>
       </div>
       <div class="row border1 d-md-none ">
-        <div class="col-2">
-          <img class="image5 " src="assets/awesome.png" alt="opengl">
+        <div class="col-2 ">
+          <img class="image5 " src="assets/awesome.png " alt="opengl ">
         </div>
-        <div class="col-9">
+        <div class="col-9 ">
           <h5>Awesome Lists</h5>
           <p>An awesome list is a list of awesome things curated by the <br>Community .</p>
-          <button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
+          <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
         </div>
       </div>
       <div class="row border1 d-none d-md-flex ">
-        <div class="col-1">
-          <img class="image5 " src="assets/awesome.png" alt="opengl">
+        <div class="col-1 ">
+          <img class="image5 " src="assets/awesome.png " alt="opengl ">
         </div>
-        <div class="col-9">
+        <div class="col-9 ">
           <h5>Awesome Lists</h5>
           <p>An awesome list is a list of awesome things curated by the Community .</p>
         </div>
-        <div class="col-2">
-          <button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
+        <div class="col-2 ">
+          <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
         </div>
       </div>
       <div class="row border1 d-md-none ">
-        <div class="col-2">
-          <img class="image5 " src="assets/aws.png" alt="opengl">
+        <div class="col-2 ">
+          <img class="image5 " src="assets/aws.png " alt="opengl ">
         </div>
-        <div class="col-9">
+        <div class="col-9 ">
           <h5>Amazon Web Services</h5>
           <p>Amazon Web Services provides on-demand cloud computing platform on a subscription basis.</p>
-          <button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
+          <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
         </div>
       </div>
       <div class="row border1 d-none d-md-flex ">
-        <div class="col-1">
-          <img class="image5 " src="assets/aws.png" alt="opengl">
+        <div class="col-1 ">
+          <img class="image5 " src="assets/aws.png " alt="opengl ">
         </div>
-        <div class="col-9">
+        <div class="col-9 ">
           <h5>Amazon Web Services</h5>
           <p>Amazon Web Services provides on-demand cloud computing platform on a subscription basis.</p>
         </div>
-        <div class="col-2">
-          <button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
+        <div class="col-2 ">
+          <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
         </div>
       </div>
       <div class="row border1 d-md-none ">
-        <div class="col-2">
-          <img class="image5 " src="assets/azure.png" alt="opengl">
+        <div class="col-2 ">
+          <img class="image5 " src="assets/azure.png " alt="opengl ">
         </div>
-        <div class="col-9">
+        <div class="col-9 ">
           <h5>Azure</h5>
           <p>Azure is a cloud computing services created by Microsft.</p>
-          <button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
+          <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
         </div>
       </div>
-      <div class="row border1 d-none d-md-flex">
-        <div class="col-1">
-          <img class="image5 " src="assets/azure.png" alt="opengl">
+      <div class="row border1 d-none d-md-flex ">
+        <div class="col-1 ">
+          <img class="image5 " src="assets/azure.png " alt="opengl ">
         </div>
-        <div class="col-9">
+        <div class="col-9 ">
           <h5>Azure</h5>
           <p>Azure is a cloud computing services created by Microsft.</p>
         </div>
-        <div class="col-2">
-          <button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
+        <div class="col-2 ">
+          <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
         </div>
       </div>
-      <div class="row border1 d-md-none">
-        <div class="col-2 box">#</div>
-        <div class="col-9">
+      <div class="row border1 d-md-none ">
+        <div class="col-2 box ">#</div>
+        <div class="col-9 ">
           <h5>Mobile</h5>
           <p>Mobile apps,mobile databases, & mobile testing frameworks.</p>
-          <button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
+          <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
         </div>
       </div>
-      <div class="row border1 d-none d-md-flex">
-        <div class="col-1 box">#</div>
-        <div class="col-9">
+      <div class="row border1 d-none d-md-flex ">
+        <div class="col-1 box ">#</div>
+        <div class="col-9 ">
           <h5>Mobile</h5>
           <p>Mobile apps,mobile databases, & mobile testing frameworks.</p>
         </div>
-        <div class="col-2">
-          <button type="button" class="btn btn-outline-dark button1"><img class="image4" src="assets/star.svg" alt="*">star</button>
+        <div class="col-2 ">
+          <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
         </div>
       </div>
       <br>
-      <div class="col-12">
-        <div class="card load">
+      <div class="col-12 ">
+        <div class="card load ">
           Load more...
         </div>
       </div>
       <br>
-      <div class="row">
-        <div class="col-12">
+      <!--<div class="row ">
+        <div class="col-12 ">
           <h5>Popular topics</h5>
         </div>
         <br>
-        <div class="col-12">
-          <button type="button" class="btn btn-outline-primary btn-sm"><span>react</span></button>
-          <button type="button" class="btn btn-outline-primary btn-sm"><span>javascript</span></button>
-          <button type="button" class="btn btn-outline-primary btn-sm"><span>css</span></button>
-          <button type="button" class="btn btn-outline-primary btn-sm"><span>python</span></button>
-          <button type="button" class="btn btn-outline-primary btn-sm"><span>html</span></button>
-          <button type="button" class="btn btn-outline-primary btn-sm"><span>ecommerce</span></button>
+        <div class="col-12 ">
+          <button type="button " class="btn btn-outline-primary btn-sm "><span>react</span></button>
+          <button type="button " class="btn btn-outline-primary btn-sm "><span>javascript</span></button>
+          <button type="button " class="btn btn-outline-primary btn-sm "><span>css</span></button>
+          <button type="button " class="btn btn-outline-primary btn-sm "><span>python</span></button>
+          <button type="button " class="btn btn-outline-primary btn-sm "><span>html</span></button>
+          <button type="button " class="btn btn-outline-primary btn-sm "><span>ecommerce</span></button>
         </div>
-        <div class="col-12">
-          <button type="button" class="btn btn-outline-primary btn-sm"><span>python-3</span></button>
-          <button type="button" class="btn btn-outline-primary btn-sm"><span>ecommerce-platform</span></button>
-          <button type="button" class="btn btn-outline-primary btn-sm"><span>nci-ict</span></button>
-          <button type="button" class="btn btn-outline-primary btn-sm"><span>solidus-extensions</span></button>
+        <div class="col-12 ">
+          <button type="button " class="btn btn-outline-primary btn-sm "><span>python-3</span></button>
+          <button type="button " class="btn btn-outline-primary btn-sm "><span>ecommerce-platform</span></button>
+          <button type="button " class="btn btn-outline-primary btn-sm "><span>nci-ict</span></button>
+          <button type="button " class="btn btn-outline-primary btn-sm "><span>solidus-extensions</span></button>
         </div>
-        </diwv>
+        </div> -->
 
+      <div class="container ">
+        <div class="row ul ">
+          <div class="col-12 ">
+            <h5>Popular topics</h5>
+          </div>
+          <br>
+          <ul class="col-12 ">
+            <li><a href="# ">react</a></li>
+            <li><a href="# ">javascript</a></li>
+            <li><a href="# ">css</a></li>
+            <li><a href="# ">python</a></li>
+            <li><a href="# ">html</a></li>
+            <li><a href="# ">ecommerce</a></li>
+          </ul>
+
+          <ul class="col-12 k ">
+            <!--<li class="move "><a href="# "><img src="assets/question-mark.png " alt="question ">Help</a></li>
+            <li><a href="# ">English(Indian)</a></li>-->
+            <li><a href="# ">python3</a></li>
+            <li><a href="# ">ecommerce-platform</a></li>
+            <li><a href="# ">nti-ctr</a></li>
+            <li><a href="# ">solidus-extensions</a></li>
+
+          </ul>
+        </div>
       </div>
+    </div>
 
   </body>
 
