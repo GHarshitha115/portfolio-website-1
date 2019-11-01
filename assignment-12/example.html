@@ -22,18 +22,68 @@
         text-align: right;
       }
 
-      .A1 {
+      .A7 {
 
         text-align: left;
         width: 45px;
+      }
 
+      .A1 {
+        text-align: left;
+        width: 45px;
+      }
 
+      .m {
+        display: inline-block;
+        font-size: 13px;
+      }
+
+      .A3 {
+        width: 20px;
+      }
+
+      .nav {
+
+        list-style-type: none;
+        text-align: center;
 
       }
 
-      0-90,
-      MK,
-      LLLL
+      .nav li {
+        display: inline;
+        font-size: 13px;
+        padding: 10px;
+      }
+
+      li {
+        display: block;
+        float: left;
+        padding: 5px;
+        font-size: 11px;
+      }
+
+      .list {
+        margin-left: -40px;
+
+      }
+
+      .bt {
+        margin-left: 50px;
+      }
+
+      h6 {
+        margin-left: -10px;
+      }
+
+      .k {
+        margin-left: -20px;
+        margin-top: -5px;
+
+      }
+
+      .move {
+        margin-top: -4px;
+      }
     </style>
   </head>
 
@@ -41,13 +91,42 @@
     <div class="container ">
       <div class="row A2">
         <div class="col-6  ">
-          <p><img class="A1" src="assets/logo.png" alt="Gmail Icon">Gmail</p>
+          <p><img class="A7" src="assets/logo.png" alt="Gmail Icon">Gmail</p>
         </div>
         <div class="col-6  A"><button type="button" class="btn btn-primary">Get Email</button></div>
       </div>
       <div class="row A2">
-        <div class="col-6 A1">For Work</div>
+        <div class="col-6 A1">
+          <p>For Work</p>
+
+        </div>
         <div class="col-6 A">Sign in</div>
       </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h6>Google</h6>
+          </div>
+          <ul class="list">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">About Google</a></li>
+            <li><a href="#">Google Products</a></li>
+            <li><a href="#">Our Policy</a></li>
+          </ul>
+
+          <ul class="col-12 k">
+            <li class="move"><a href="#"><img src="assets/question-mark.png" alt="question">Help</a></li>
+            <li><a href="#">English(Indian)</a></li>
+            <button class="btn btn dropdown-toggle bt" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  </button>
+          </ul>
+        </div>
+      </div>
     </div>
+    </div>
+
   </body>
+
+</html>
