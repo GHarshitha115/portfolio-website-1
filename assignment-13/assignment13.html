@@ -21,10 +21,11 @@
       .B {
         padding-left: 5px;
         border-bottom: 1px solid blue;
+        color: black;
       }
 
       .row1 {
-        background-color: lightgray;
+        background-color: black;
         padding-bottom: 8px;
 
       }
@@ -46,7 +47,7 @@
       }
 
       p {
-        font-size: 13px;
+        font-size: 14px;
         color: gray;
       }
 
@@ -58,9 +59,15 @@
 
       }
 
+      .image1 {
+        background-color: white;
+      }
+
       .border1 {
         padding-top: 10px;
         border-bottom: 1px solid lightgray;
+        border: auto;
+        margin-right: auto;
 
       }
 
@@ -74,6 +81,7 @@
         display: inline-block;
         margin-left: -40px;
         margin-right: 90px;
+
       }
 
 
@@ -88,7 +96,9 @@
 
 
       .image2 {
-        margin: auto;
+
+        margin-left: auto;
+        margin-right: auto;
         width: 70px;
         padding: 8px;
       }
@@ -100,7 +110,7 @@
       }
 
       .k {
-        padding-bottom: 40px;
+        padding-bottom: 45px;
       }
 
       .k1 {
@@ -111,8 +121,9 @@
 
         background-color: AliceBlue;
         padding: 30px;
+        height: 30px;
 
-        text-align: center;
+        margin-bottom: auto;
       }
 
       .image4 {
@@ -123,6 +134,7 @@
         border-radius: 1px solid lightgray;
         background-color: ghostwhite;
         padding-bottom: 5px;
+
       }
 
       .image5 {
@@ -186,9 +198,9 @@
         <ul>Collection</ul>
         <ul>Events</ul>
       </div>
-      <ul class="row d-none d-md-flex left border1 ">
+      <ul class="row row2x d-none d-md-flex left border1 ">
         <ul class="ll">Explore</ul>
-        <ul class="B ll">Topics</ul>
+        <ul class="ll B">Topics</ul>
         <ul class="ll">Trending</ul>
         <ul class="ll">Collection</ul>
         <ul class="ll">Events</ul>
@@ -202,7 +214,7 @@
       <br>
 
       <div class="row align1-center d-md-none ">
-        <div class="col-12 align1-center ">
+        <div class="col-12 col-md-4 align1-center ">
           <div class="card ">
             <img class="image2 " src="assets/opengl.png " alt="opengl ">
             <h5>OpenGl</h5>
@@ -211,8 +223,8 @@
           </div>
         </div>
       </div>
-      <div class="row align1-center d-md-none ">
-        <div class="col-12 555t-center ">
+      <div class="row align1-center  d-md-none ">
+        <div class="col-12 align1-center ">
           <div class="card ">
             <img class="image2 " src="assets/flask.png " alt="opengl ">
             <h5>Flask</h5>
@@ -221,7 +233,7 @@
           </div>
         </div>
       </div>
-      <div class="row align1-center d-md-none ">
+      <div class="row align1-center  d-md-none ">
         <div class="col-12 align1-center ">
           <div class="card ">
             <img class="image2 " src="assets/gradle.png " alt="opengl ">
@@ -266,13 +278,13 @@
         <div class="col-1 box ">#</div>
         <div class="col-10 ">
           <h5>3D</h5>
-          <p>3D modeling is the process of virtually developing the<br> surface and structure of a 3D object.</p>
+          <p>3D modeling is the process of virtually developing the surface and structure of a 3D object.</p>
           <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
         </div>
       </div>
       <div class="row border1 d-none d-md-flex ">
-        <div class="col-1 box ">#</div>
-        <div class="col-9 ">
+        <div class="col-md-1 col-xl-1 box ">#</div>
+        <div class="col-md-9 col-xl-6 ">
           <h6>3D</h6>
           <p>3D modeling is the process of virtually developing the surface and structure of a 3D object.</p>
         </div>
@@ -290,8 +302,8 @@
       </div>
 
       <div class="row border1 d-none d-md-flex ">
-        <div class="col-1 box ">#</div>
-        <div class="col-9 ">
+        <div class="col-md-1 col-xl-1 box ">#</div>
+        <div class="col-md-9 col-xl-6 ">
           <h5>Ajax</h5>
           <p>Ajax is a technique for creating interactive web applications.</p>
         </div>
@@ -307,6 +319,17 @@
           <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
         </div>
       </div>
+      <div class="row border1 d-none d-md-flex ">
+        <div class="col-1  box ">#</div>
+        <div class="col-9 col-xl-6">
+          <h5>Alogrithm</h5>
+          <p>Alogrithm are self-contained sequences that carry out a variety of tasks.</p>
+        </div>
+        <div class="col-2 "><button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
+
+        </div>
+      </div>
+
       <div class="row border1 d-md-none ">
         <div class="col-2 ">
           <img class="image5 " src="assets/amphp.png " alt="opengl ">
@@ -321,7 +344,7 @@
         <div class="col-1 ">
           <img class="image5 " src="assets/amphp.png " alt="opengl ">
         </div>
-        <div class="col-9 ">
+        <div class="col-9 col-xl-6">
           <h5>Amp</h5>
           <p>Amp is a non-blocking concurrency framework for PHP.</p>
         </div>
@@ -342,7 +365,7 @@
         <div class="col-1 ">
           <img class="image5 " src="assets/android.png " alt="opengl ">
         </div>
-        <div class="col-9 ">
+        <div class="col-9 col-xl-6">
           <h5>Android</h5>
           <p>Android is an operating system built by Google designed for mobile devices.</p>
         </div>
@@ -364,7 +387,7 @@
         <div class="col-1 ">
           <img class="image5 " src="assets/angular.png " alt="opengl ">
         </div>
-        <div class="col-9 ">
+        <div class="col-9 col-xl-6">
           <h5>Angular</h5>
           <p>Angular is an open source web application platform.</p>
         </div>
@@ -386,7 +409,7 @@
         <div class="col-1 ">
           <img class="image5 " src="assets/ansible.png " alt="opengl ">
         </div>
-        <div class="col-9 ">
+        <div class="col-9 col-xl-6">
           <h5>Ansible</h5>
           <p>Ansible is a simple and powerful automation engine.</p>
         </div>
@@ -404,7 +427,7 @@
       </div>
       <div class="row border1 d-none d-md-flex ">
         <div class="col-1 box ">#</div>
-        <div class="col-9 ">
+        <div class="col-9 col-xl-6">
           <h5>API</h5>
           <p>An API (Application Programming interface) is a collection of protocols and subroutines for building software.</p>
         </div>
@@ -428,7 +451,7 @@
         <div class="col-1 ">
           <img class="image5 " src="assets/arduino.png " alt="opengl ">
         </div>
-        <div class="col-9 ">
+        <div class="col-9 col-xl-6">
           <h5>Arduino</h5>
           <p>Arduino is an open source hardware and software company and maker community.</p>
         </div>
@@ -450,7 +473,7 @@
         <div class="col-1 ">
           <img class="image5 " src="assets/aspnet.png " alt="opengl ">
         </div>
-        <div class="col-9 ">
+        <div class="col-9 col-xl-6">
           <h5>ASP.Net</h5>
           <p>ASP.NET is aweb framework for building modern web apps and services.</p>
         </div>
@@ -464,7 +487,7 @@
         </div>
         <div class="col-9 ">
           <h5>Atmo</h5>
-          <p>Atom is a open source text editior built with web<br>technologies.</p>
+          <p>Atom is a open source text editior built with web technologies.</p>
           <button type="button " class="btn btn-outline-dark button1 "><img class="image4 " src="assets/star.svg " alt="* ">star</button>
         </div>
       </div>
@@ -472,7 +495,7 @@
         <div class="col-1 ">
           <img class="image5 " src="assets/atom.png " alt="opengl ">
         </div>
-        <div class="col-9 ">
+        <div class="col-9 col-xl-6">
           <h5>Atmo</h5>
           <p>Atom is a open source text editior built with web technologies.</p>
         </div>
@@ -494,7 +517,7 @@
         <div class="col-1 ">
           <img class="image5 " src="assets/awesome.png " alt="opengl ">
         </div>
-        <div class="col-9 ">
+        <div class="col-9 col-xl-6">
           <h5>Awesome Lists</h5>
           <p>An awesome list is a list of awesome things curated by the Community .</p>
         </div>
@@ -516,7 +539,7 @@
         <div class="col-1 ">
           <img class="image5 " src="assets/aws.png " alt="opengl ">
         </div>
-        <div class="col-9 ">
+        <div class="col-9 col-xl-6">
           <h5>Amazon Web Services</h5>
           <p>Amazon Web Services provides on-demand cloud computing platform on a subscription basis.</p>
         </div>
@@ -538,7 +561,7 @@
         <div class="col-1 ">
           <img class="image5 " src="assets/azure.png " alt="opengl ">
         </div>
-        <div class="col-9 ">
+        <div class="col-9 col-xl-6">
           <h5>Azure</h5>
           <p>Azure is a cloud computing services created by Microsft.</p>
         </div>
@@ -556,7 +579,7 @@
       </div>
       <div class="row border1 d-none d-md-flex ">
         <div class="col-1 box ">#</div>
-        <div class="col-9 ">
+        <div class="col-9 col-xl-6">
           <h5>Mobile</h5>
           <p>Mobile apps,mobile databases, & mobile testing frameworks.</p>
         </div>

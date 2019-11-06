@@ -42,28 +42,21 @@
         width: 20px;
       }
 
-      .nav {
 
-        list-style-type: none;
-        text-align: center;
-
-      }
-
-      .nav li {
-        display: inline;
-        font-size: 13px;
-        padding: 10px;
-      }
 
       li {
         display: block;
         float: left;
-        border: 1px solid dodgerblue;
+
         margin-right: 2px;
         margin-bottom: 2px;
         padding: 5px;
         font-size: 11px;
 
+      }
+
+      a {
+        color: black;
       }
 
       .list {
@@ -88,6 +81,52 @@
       .move {
         margin-top: -4px;
       }
+
+      .aligncenter {
+        text-align: center;
+      }
+
+      .landing-section {
+        background-color: snow;
+
+      }
+
+      /* .section-heading {
+        background-color: deepskyblue;
+      } */
+
+      .gmail {
+        margin-top: 20px;
+        margin-bottom: 50px;
+      }
+
+      .store {
+        height: 50px;
+      }
+
+      .mobile-section {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 80px;
+      }
+
+      .full-width {
+        width: 100%;
+        margin-bottom: 40px;
+      }
+
+      .mobile-3-item {
+        background-color: plum;
+        background-clip: content-box;
+        padding-left: 30px;
+        padding-right: 30px;
+
+      }
+
+      .mobile-3-item-section {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
     </style>
   </head>
 
@@ -107,29 +146,92 @@
         <div class="col-6 A">Sign in</div>
       </div>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h6>Google</h6>
-          </div>
-          <ul class="list">
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">About Google</a></li>
-            <li><a href="#">Google Products</a></li>
-            <li><a href="#">Our Policy</a></li>
-          </ul>
-
-          <ul class="col-12 k">
-            <li class="move"><a href="#"><img src="assets/question-mark.png" alt="question">Help</a></li>
-            <li><a href="#">English(Indian)</a></li>
-            <li><button class="btn btn dropdown-toggle bt move" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-  </button></li>
-          </ul>
+      <div class=" row landing-section aligncenter mobile-section">
+        <h2 class="col-12 section-heading">Get more done with Gmail</h2>
+        <p class="col-12">Now more secure, smarters and easier to use--helping you save time and do more with your inbox</p>
+        <img class="col-12 gmail" src="assets/landing-page-image-mobile.png" alt="landing">
+        <div class="col-12 gmail">
+          <a class=" btn btn-primary" href="#">Get Gmail</a>
         </div>
       </div>
+
+
+      <div class="row aligncenter mobile-section">
+        <h2 class="col-12">Experience Gmail on any devices</h2>
+        <p class="col-12">The ease & simplicity of Gmail, wherever you are</p>
+        <div class="col-12">
+          <a href="#">
+          <img class="store" src="assets/google-playstore.png" alt="play">
+         </a>
+          <a href="#">
+          <img  class="store" src="assets/app-store.png" alt="app">
+       
+       </a> </div>
+        <img src="assets/experience-image-mobile.png" alt="mtb" class="col-12 gmail">
+      </div>
+      <div class="row ">
+        <div class="col-12 mobile-store aligncenter mobile-section mobile-3-item">
+          <div class="mobile-3-item-section">
+            <br>
+            <h2>Stay Organised instantly</h2>
+
+            <p>See what's new at a glance and decide what do you want to read and response to u.</p>
+          </div>
+          <img class="full-width" src="assets/stay2.png" alt="stay">
+        </div>
+        <br>
+        <div class="col-12 mobile-store aligncenter mobile-section mobile-3-item">
+          <br>
+          <div class="mobile-3-item-section ">
+            <h2>Never drop the ball</h2>
+            <p>Get nudges that remaind you to follow up and respond to message, so that nothing slips through the crack.</p>
+          </div>
+          <img class="full-width" src="assets/never2.png" alt="never">
+        </div>
+      </div>
+      <div class="row mobile-store aligncenter mobile-section ">
+        <br>
+        <h2 class="col-12">Take action right from the inbox</h2>
+        <p class="col-12">View attachments, RSVP to events, snooze messages and more without opening any emails.</p>
+        <img src="assets/take-action-mobile.png" alt="action.png" class="col-12">
+      </div>
+
+      <div class="row  mobile-store aligncenter mobile-section ">
+        <h2 class="col-12">Avoid suspicious emails</h2>
+        <p class="col-12">Gmail Blocks 99.9% of dangerous emails before they reach you. if we think something seems phishy-y, you will get a warning</p>
+        <img src="assets/avoid-suspicious-emails-mobile.png" alt="avoid.png" class="col-12">
+      </div>
+      <div class="row aligncenter mobile-section">
+        <img class="col-12 gmail" src="assets/logo.png" alt="Gmail">
+        <h2 class="col-12">Get started with Gmail</h2>
+        <div class="gmail aligncenter">
+          <a class="btn btn-primary" href="#">Get Gmail</a>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-12">
+          <h6>Google</h6>
+        </div>
+        <ul class="list">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">About Google</a></li>
+          <li><a href="#">Google Products</a></li>
+          <li><a href="#">Our Policy</a></li>
+        </ul>
+
+        <ul class="col-12 k">
+          <li class="move"><a href="#"><img src="assets/question-mark.png" alt="question">Help</a></li>
+          <li><a href="#">English(Indian)</a></li>
+          <li><button class="btn btn dropdown-toggle bt move" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  </button></li>
+        </ul>
+      </div>
+
     </div>
-    </div>
+
 
   </body>
 
