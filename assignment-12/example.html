@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html>
+
+
+<html lang="en">
 
   <head>
+    <title>assignment-12</title>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="../bootstrap/bootstrap.min.css" />
@@ -55,10 +59,6 @@
 
       }
 
-      a {
-        color: black;
-      }
-
       .list {
         margin-left: -40px;
 
@@ -78,6 +78,10 @@
 
       }
 
+      a {
+        color: black;
+      }
+
       .move {
         margin-top: -4px;
       }
@@ -87,8 +91,14 @@
       }
 
       .landing-section {
-        background-color: snow;
+        width: 300px;
+        height: 400px;
 
+
+      }
+
+      .full-width-1 {
+        width: 100%;
       }
 
       /* .section-heading {
@@ -97,7 +107,8 @@
 
       .gmail {
         margin-top: 20px;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
+
       }
 
       .store {
@@ -105,60 +116,105 @@
       }
 
       .mobile-section {
-        padding-left: 15px;
+        padding-left: 45px;
         padding-right: 15px;
+        font-size: 12px;
         padding-top: 80px;
       }
 
       .full-width {
         width: 100%;
-        margin-bottom: 40px;
+
       }
 
       .mobile-3-item {
-        background-color: plum;
+        background-color: lavender;
         background-clip: content-box;
         padding-left: 30px;
         padding-right: 30px;
 
+
       }
 
-      .mobile-3-item-section {
-        padding-left: 20px;
-        padding-right: 20px;
+
+
+      .gmail-logo {
+        width: 76px;
+      }
+
+      .landing-section-tablet {
+        padding-left: 80px;
+        margin-bottom: 20px;
+        text-align: left;
+        font-size: 13px;
+      }
+
+      .landing-section-xtra {
+        padding-left: -20px;
+        margin-bottom: 20px;
+        text-align: left;
+        font-size: 13px;
+      }
+
+      .logo-container {
+        box-shadow: 0 2px 6px 0 right(0, 0, 0, .12), inset 0;
       }
     </style>
   </head>
 
   <body>
     <div class="container ">
-      <div class="row A2">
-        <div class="col-6  ">
+      <div class="row A2 logo container">
+        <div class="col-6 col-md-6 order-md-1 text-md-left">
           <p><img class="A7" src="assets/logo.png" alt="Gmail Icon">Gmail</p>
         </div>
-        <div class="col-6  A"><button type="button" class="btn btn-primary">Get Email</button></div>
-      </div>
-      <div class="row A2">
-        <div class="col-6 A1">
+        <div class="col-6 col-md-2 order-md-4 A text-md-right"><button type="button" class="btn btn-primary">Get Email</button></div>
+
+        <div class="col-6 col-md-2 order-md-1 A1 text-md-right">
           <p>For Work</p>
 
         </div>
-        <div class="col-6 A">Sign in</div>
+        <div class="col-6 col-md-2 order-md-1 A text-md-right">Sign in</div>
       </div>
 
-      <div class=" row landing-section aligncenter mobile-section">
+
+      <div class=" row aligncenter mobile-section d-md-none ">
         <h2 class="col-12 section-heading">Get more done with Gmail</h2>
         <p class="col-12">Now more secure, smarters and easier to use--helping you save time and do more with your inbox</p>
-        <img class="col-12 gmail" src="assets/landing-page-image-mobile.png" alt="landing">
+        <img class="col-12 gmail  landing-section" class="btn-btn-primary" src="assets/landing-page-image-mobile.png" alt="landing">
         <div class="col-12 gmail">
           <a class=" btn btn-primary" href="#">Get Gmail</a>
         </div>
+      </div>
+      <div class="row d-none  mobile-section landing-section-tablet d-md-flex d-md-none ">
+        <div class="col-6">
+          <h2>Get more done with Gmail</h2>
+          <p>Now more secure, smarters and easier to use--helping you save time and do more with your inbox</p>
+
+          <a href="#" class="btn btn-primary gmail">Create an Account</a>
+
+        </div>
+        <div class="col-6">
+          <img src="assets/desktop.png" alt="desktop" class=" full-width "></div>
+      </div>
+      <div class="row  mobile-section landing-section-xtra d-none d-xl-flex text-xl-left">
+        <div class="col-6">
+          <h2>Get more done with Gmail</h2>
+          <p>Now more secure, smarters and easier to use--helping you save time and do more with your inbox</p>
+
+          <a href="#" class="btn btn-primary gmail">Create an Account</a>
+
+        </div>
+        <div class="col-12">
+          <img src="assets/desktop.png" alt="desktop" class="full-width"></div>
       </div>
 
 
       <div class="row aligncenter mobile-section">
         <h2 class="col-12">Experience Gmail on any devices</h2>
         <p class="col-12">The ease & simplicity of Gmail, wherever you are</p>
+        <br>
+        <br>
         <div class="col-12">
           <a href="#">
           <img class="store" src="assets/google-playstore.png" alt="play">
@@ -167,68 +223,87 @@
           <img  class="store" src="assets/app-store.png" alt="app">
        
        </a> </div>
-        <img src="assets/experience-image-mobile.png" alt="mtb" class="col-12 gmail">
       </div>
-      <div class="row ">
-        <div class="col-12 mobile-store aligncenter mobile-section mobile-3-item">
-          <div class="mobile-3-item-section">
-            <br>
-            <h2>Stay Organised instantly</h2>
-
-            <p>See what's new at a glance and decide what do you want to read and response to u.</p>
-          </div>
-          <img class="full-width" src="assets/stay2.png" alt="stay">
-        </div>
-        <br>
-        <div class="col-12 mobile-store aligncenter mobile-section mobile-3-item">
+      <img src="assets/experience-image-mobile.png" alt="mtb" class="col-12 gmail full-width">
+    </div>
+    <div class="row ">
+      <div class="col-12  col-md-6 aligncenter mobile-section mobile-3-item text-md-left">
+        <div class="mobile-3-item-section">
           <br>
-          <div class="mobile-3-item-section ">
-            <h2>Never drop the ball</h2>
-            <p>Get nudges that remaind you to follow up and respond to message, so that nothing slips through the crack.</p>
-          </div>
-          <img class="full-width" src="assets/never2.png" alt="never">
+          <h2>Stay Organised instantly</h2>
+
+          <p>See what's new at a glance and decide what do you want to read and response to u.</p>
         </div>
+        <img class=" d-md-none full-width" src="assets/stay2.png" alt="stay">
+        <img class="d-none d-md-inline full-width" src="assets/stay1.png" alt="desktop Icon">
       </div>
-      <div class="row mobile-store aligncenter mobile-section ">
+      <br>
+      <div class="col-12 col-md-6 aligncenter mobile-section mobile-3-item text-md-left">
         <br>
-        <h2 class="col-12">Take action right from the inbox</h2>
-        <p class="col-12">View attachments, RSVP to events, snooze messages and more without opening any emails.</p>
-        <img src="assets/take-action-mobile.png" alt="action.png" class="col-12">
-      </div>
-
-      <div class="row  mobile-store aligncenter mobile-section ">
-        <h2 class="col-12">Avoid suspicious emails</h2>
-        <p class="col-12">Gmail Blocks 99.9% of dangerous emails before they reach you. if we think something seems phishy-y, you will get a warning</p>
-        <img src="assets/avoid-suspicious-emails-mobile.png" alt="avoid.png" class="col-12">
-      </div>
-      <div class="row aligncenter mobile-section">
-        <img class="col-12 gmail" src="assets/logo.png" alt="Gmail">
-        <h2 class="col-12">Get started with Gmail</h2>
-        <div class="gmail aligncenter">
-          <a class="btn btn-primary" href="#">Get Gmail</a>
+        <div class="mobile-3-item-section ">
+          <h2>Never drop the ball</h2>
+          <p>Get nudges that remaind you to follow up and respond to message, so that nothing slips through the crack.</p>
         </div>
+        <img class=" d-md-none full-width" src="assets/never2.png" alt="never">
+        <img class="d-none d-md-inline full-width" src="assets/never1.png" alt="desktop Icon">
+      </div>
+    </div>
+    <div class=" row ">
+      <br>
+      <div class="col-12 col-md-6  aligncenter mobile-section mobile-3-item-section text-md-left">
+        <h2>Take action right from the inbox</h2>
+        <p>View attachments, RSVP to events, snooze messages and more without opening any emails.</p>
+      </div>
+      <br>
+      <div class="col-12 col-md-6  aligncenter mobile-section  text-md-left mobile-3-item-section">
+        <img src="assets/take-action-mobile.png" alt="action.png" class="d-md-none full-width">
+        <img src="assets/take-action-desktop.png" alt="desktop Icon" class="d-none d-md-inline full-width"></div>
+    </div>
+
+    <div class="row ">
+      <br>
+      <div class="col-12 col-md-6 order-md-2  aligncenter mobile-section text-md-left mobile-3-item-section">
+        <h2 class="col-12 ">Avoid suspicious emails</h2>
+        <p class="col-12 ">Gmail Blocks 99.9% of dangerous emails before they reach you. if we think something seems phishy-y, you will get a warning</p>
+      </div>
+      <br>
+      <div class="col-12 col-md-6 order-md-1  aligncenter mobile-section text-md-left mobile-3-item-section">
+        <img src="assets/avoid-suspicious-emails-mobile.png" alt="avoid.png" class="d-md-none full-width">
+        <img src="assets/avoid-suspicious-emails-desktop.png" alt="desktop Icon" class="d-none d-md-inline full-width">
+
+      </div>
+    </div>
+    <div class="row  mobile-store aligncenter mobile-section ">
+
+      <div class="col-12 aligncenter ">
+        <img src="assets/logo.png" alt="Gmail" class="gmail-logo">
       </div>
 
+      <h2 class="col-12">Get Started Gmail</h2>
+      <div class="col-12 gmail">
+        <a class=" btn btn-primary" href="#">Get Gmail</a>
+      </div>
+    </div>
 
-      <div class="row">
-        <div class="col-12">
-          <h6>Google</h6>
-        </div>
-        <ul class="list">
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Terms</a></li>
-          <li><a href="#">About Google</a></li>
-          <li><a href="#">Google Products</a></li>
-          <li><a href="#">Our Policy</a></li>
-        </ul>
+    <div class="row mobile-section ">
+      <div class="col-12">
+        <h6>Google</h6>
+      </div>
+      <ul class="list">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">About Google</a></li>
+        <li><a href="#">Google Products</a></li>
+        <li><a href="#">Our Policy</a></li>
+      </ul>
 
-        <ul class="col-12 k">
-          <li class="move"><a href="#"><img src="assets/question-mark.png" alt="question">Help</a></li>
-          <li><a href="#">English(Indian)</a></li>
-          <li><button class="btn btn dropdown-toggle bt move" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <ul class="col-12 k">
+        <li class="move"><a href="#"><img src="assets/question-mark.png" alt="question">Help</a></li>
+        <li><a href="#">English(Indian)</a></li>
+        <li><button class="btn btn dropdown-toggle bt move" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
   </button></li>
-        </ul>
-      </div>
+      </ul>
+    </div>
 
     </div>
 
